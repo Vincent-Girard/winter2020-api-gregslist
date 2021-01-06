@@ -61,6 +61,7 @@ export default class HousesController {
 
     bid(id, price) {
         try {
+            console.log(price)
             housesService.bid(id, price)
         } catch (error) {
             console.error(error)

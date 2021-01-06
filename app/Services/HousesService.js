@@ -31,6 +31,7 @@ class HousesService {
         let oldHouseIndex = ProxyState.houses.findIndex(h => h.id == id)
 
         let temp = ProxyState.houses
+        debugger
         temp.splice(oldHouseIndex, 1, new House(res.data))
         ProxyState.houses = temp
     }
